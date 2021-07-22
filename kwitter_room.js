@@ -10,7 +10,7 @@ var firebaseConfig = {
 
     firebase.initializeApp(firebaseConfig);
 
-      var username = localStorage.getItem("user_name");
+      var username = localStorage.getItem("username");
       var room_name = localStorage.getItem("room_name");  
       document.getElementById("welcome").innerHTML = "welcome "+username+"!";
 
@@ -45,3 +45,4 @@ function logout(){
       localStorage.removeItem("room_name");
       window.location = "index.html";
 }
+
